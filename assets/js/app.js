@@ -72,7 +72,7 @@ function UpdateBars(circleGroup, newXScale) {
     return;
 };
 
-d3.csv('/assets/data/data.csv')
+d3.csv('./assets/data/data.csv')
     .then(function (health_poverty_data) {
         let ymin = d3.min(health_poverty_data.map(d => parseFloat(d['healthcare'])));
         let ymax = d3.max(health_poverty_data.map(d => parseFloat(d['healthcare'])));
