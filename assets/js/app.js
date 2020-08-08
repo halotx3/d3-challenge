@@ -116,7 +116,7 @@ d3.csv('./assets/data/data.csv')
             .attr('r', 8)
             .classed('moreInfo', true)
             // .attr('fill', d => [d['abbr']])
-            .attr('fill', 'green')
+            .attr('fill', 'blue')
 
 
         circleGroup.append("text")
